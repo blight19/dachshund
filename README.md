@@ -108,6 +108,8 @@ Description=dachshund Server
 #Documentation=
 
 [Service]
+User=dachshund
+Group=dachshund
 WorkingDirectory=/usr/local/dachshund
 ExecStart=/usr/local/dachshund/server
 ExecReload=/bin/kill -HUP $MAINPID

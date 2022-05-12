@@ -5,10 +5,9 @@ import (
 	"dachshund-server/server/worker"
 	"encoding/json"
 	"fmt"
+	log "github.com/sirupsen/logrus"
 	"io/ioutil"
 	"os"
-
-	log "github.com/sirupsen/logrus"
 )
 
 type conf struct {

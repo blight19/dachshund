@@ -26,15 +26,15 @@ type conf struct {
 	SkipOnce    bool     `json:"skip-once"`
 }
 
-func init() {
-
-	file, err := os.OpenFile("monitor.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.SetOutput(file)
-	log.SetLevel(log.ErrorLevel)
-}
+//func init() {
+//
+//	file, err := os.OpenFile("monitor.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
+//	if err != nil {
+//		log.Fatal(err)
+//	}
+//	log.SetOutput(file)
+//	log.SetLevel(log.ErrorLevel)
+//}
 func main() {
 	log.Info("starting...")
 	var config conf
